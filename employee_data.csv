@@ -1,0 +1,9 @@
+Name,Base Salary,Commission,Quota,Bonus,Type,Title
+Johnny Smith,80000,0,0,0,Employee,Developer
+Jimmy McMahon,85000,0,0,0,Employee,Developer
+Bob Lob,50000,0.005,0,0,Commission,Commission Salesperson
+Ricky Bobby,40000,0.015,0,0,Commission,Commission Salesperson
+Edna Krabappel,87000,0,0,0,Employee,Designer
+Willie Groundskeeper,75000,0,60000,5000,Quota,Quota Salesperson
+Clancy Wiggum,80000,0,80000,10000,Quota,Quota Salesperson
+Charles Burns,500000,0,250000,1000,Owner,Owner

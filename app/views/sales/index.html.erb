@@ -1,1 +1,17 @@
 <p>List your sales here</p>
+<table border="1">
+<tr>
+<th>Sale Amount</th>
+<th>Name</th>
+<th>Commission</th>
+</tr>
+<% @sales_list.each do |sale| %>
+<%  %>
+<tr class="<%= sale.last_name.downcase %>">
+<td><%= "$#{sale.gross_sale_value.floor_to(2)}" %></td>
+<td><%= Employee.employee_named(sale.last_name).name %></td>
+<% %>
+<td><%= sale.commission_due.floor_to(2) if sale.commission_due > 0 %></td>
+</tr>
+<% end %>
+</table>

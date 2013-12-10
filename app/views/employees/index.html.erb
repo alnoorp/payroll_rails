@@ -1,1 +1,19 @@
 <p>List your employees here</p>
+<table border="1">
+<tr>
+<th>Name</th>
+<th>Title</th>
+<th>Gross Salary</th>
+<th>Net Pay</th>
+</tr>
+<% @employees.each do |employee| %>
+<% title = employee.title %>
+<tr class="<%= title.downcase %>">
+<td class="name"><%= employee.name %></td>
+<td><%= employee.title %></td>
+<td><%= "$#{employee.gross_salary.floor_to(2)}" %></td>
+<td><%= "$#{employee.net_pay.floor_to(2)}" %></td>
+</tr>
+<% end %>
+</table>
+
