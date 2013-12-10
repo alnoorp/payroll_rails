@@ -21,4 +21,8 @@ class Sale
     end
     @sales_array
   end
+
+  def net_commission
+    commission_due.floor_to(2) if commission_due > 0
+  end
 end
